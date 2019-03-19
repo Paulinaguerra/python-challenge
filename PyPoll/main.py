@@ -4,42 +4,41 @@ import csv
 elections_file = os.path.join ("election_data.csv")
 
 with open(elections_file) as csvfile:
-    reader = csv.reader(csvfile)
+    csvreader = csv.reader(csvfile)
     content = csvfile.read()
+    header = next(csvreader)
 
-votes = []
-county = []
-candidate = []
-review_percent = []
 total_votes = 0
-winning_candidate = ""
-candidate_count = 0 
+candidate = []
+percentageV = []
+individual_v = []
+winner = []
 
-
-for row in csvreader:
-
-    if row[0] = votes 
-
+#The total number of votes cast
+    for row in csvreader:
     
-    total_votes = total_votes + 1
+        total_votes = total_votes + 1 
 
-    candidate = row["Candidate"]
-
-
-
-#A complete list of candidates who received votes
-
+#A complete list of candidates who received votes and votes
+    if row[2] 
+    individual_v = len(candidate)
 
 #The percentage of votes each candidate won
-def getPercentages(candidateData):
-
-totalvotes = int(candidateData) 
-
-winPercent = 
-
-
-
-
-#The total number of votes each candidate won
+    for candidate in total_votes:
+        def getPercentageV (candidateData):
+        percentageV = round ((individual_v / total_votes) * 100)2
 
 #The winner of the election based on popular vote.
+    winner = max(individual_v)append.candidate
+
+
+#prints
+print ("Election Data")
+print ("-----------------------")
+print ("Total Votes:" total_votes))
+print ("-----------------------")
+print (candidate + percentageV + individual_v )
+print ("-----------------------")
+print ("Winner:" winner)
+print ("-----------------------")
+
